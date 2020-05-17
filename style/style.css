@@ -1,0 +1,21 @@
+body {
+    height: 100%;
+}
+
+#navBarMenu {
+    position: sticky;
+    top: 0;
+}
+
+#userPhoto {
+    height:100px; 
+    width: 100px
+}
+
+#chatBar {
+position: absolute; /*El div será ubicado con relación a la pantalla*/
+left: 0px; /*A la derecha deje un espacio de 0px*/
+right: 0px; /*A la izquierda deje un espacio de 0px*/
+bottom: 0px; /*Abajo deje un espacio de 0px*/
+z-index: 0;
+}
