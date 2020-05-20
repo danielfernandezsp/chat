@@ -1,5 +1,9 @@
 body {
     height: 100%;
+    background: #C6FFDD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
 #navBarMenu {
@@ -8,14 +12,40 @@ body {
 }
 
 #userPhoto {
-    height:100px; 
-    width: 100px
+    height:50px; 
+    width: 50px
 }
 
-#chatBar {
-position: absolute; /*El div será ubicado con relación a la pantalla*/
-left: 0px; /*A la derecha deje un espacio de 0px*/
-right: 0px; /*A la izquierda deje un espacio de 0px*/
-bottom: 0px; /*Abajo deje un espacio de 0px*/
-z-index: 0;
+#contenido {
+    margin-bottom: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#chatContent {
+    height: 75vh;
+    overflow-y: scroll;
+    background-color: rgba(245, 245, 245, 0.24);
+}
+
+#from {
+    font-size: 17px !important;
+    background-color: rgba(27, 182, 202, 0.300);
+    clip-path: polygon(1% 100%, 100% 100%, 100% 0, 58% 0, 32% 0, 0 0, 1% 20px);
+}
+
+#to {
+    font-size: 17px !important;
+    background-color: rgba(27, 202, 50, 0.300);
+    clip-path: polygon(0 100%, 99% 100%, 99% 20px, 100% 0, 0 0, 0 0, 0 0);
+}
+
+#chatPhoto {
+    width: 35px;
+    height: 35px;
+
+}
+
+.pepo {
+    background-color: grey;
 }
