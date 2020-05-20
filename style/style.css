@@ -1,9 +1,14 @@
 body {
     height: 100%;
-    background: #C6FFDD;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: #0F2027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: #C6FFDD;  /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #navBarMenu {
@@ -12,40 +17,57 @@ body {
 }
 
 #userPhoto {
-    height:50px; 
+    height: 50px;
     width: 50px
 }
 
-#contenido {
-    margin-bottom: 100px;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
 #chatContent {
-    height: 75vh;
+    height: 82vh;
     overflow-y: scroll;
-    background-color: rgba(245, 245, 245, 0.24);
 }
 
-#from {
-    font-size: 17px !important;
-    background-color: rgba(27, 182, 202, 0.300);
-    clip-path: polygon(1% 100%, 100% 100%, 100% 0, 58% 0, 32% 0, 0 0, 1% 20px);
+.from,
+.to {
+    max-width: 83%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 2px;
+    font-size: 18px !important;
+    -webkit-box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.75);
 }
 
-#to {
-    font-size: 17px !important;
-    background-color: rgba(27, 202, 50, 0.300);
-    clip-path: polygon(0 100%, 99% 100%, 99% 20px, 100% 0, 0 0, 0 0, 0 0);
+.from {
+    background-color: rgb(65, 253, 255);
+    border-radius: 0px 10px 10px 10px;
 }
 
-#chatPhoto {
+.to {
+    margin-right: 5px;
+    background-color: rgb(65, 253, 90);
+    border-radius: 10px 0px 10px 10px;
+}
+
+.chatPhoto {
+    -webkit-box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.75);
     width: 35px;
     height: 35px;
-
 }
 
-.pepo {
-    background-color: grey;
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: teal;
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
